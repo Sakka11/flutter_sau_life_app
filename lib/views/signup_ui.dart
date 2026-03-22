@@ -91,7 +91,7 @@ class _SignupUiState extends State<SignupUi> {
                 //ส่วนป้อนอีเมล
                 SizedBox(height: 10),
                 TextField(
-                  obscureText: true,
+                  keyboardType: TextInputType.emailAddress,
                   decoration: InputDecoration(
                     border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(10),
@@ -101,7 +101,7 @@ class _SignupUiState extends State<SignupUi> {
                       color: Colors.grey,
                     ),
                     hint: Text(
-                      'E-Mail',
+                      'E-mail',
                       style: TextStyle(
                         color: Colors.grey,
                       ),
@@ -130,10 +130,10 @@ class _SignupUiState extends State<SignupUi> {
                     contentPadding: EdgeInsets.all(13),
                   ),
                 ),
-                //ส่วนป้อนรหัสผ่าน
+                //ส่วนป้อนอีเมล
                 SizedBox(height: 10),
                 TextField(
-                  keyboardType: TextInputType.emailAddress,
+                  obscureText: true,
                   decoration: InputDecoration(
                     border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(10),
@@ -151,6 +151,7 @@ class _SignupUiState extends State<SignupUi> {
                     contentPadding: EdgeInsets.all(13),
                   ),
                 ),
+
                 //ส่วนปุ่ม Signup
                 SizedBox(height: 22),
                 ElevatedButton(
